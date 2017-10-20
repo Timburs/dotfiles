@@ -1,0 +1,31 @@
+#
+# .bashrc
+#
+PS1='\h[\W]\$ '
+PS2='more> '
+
+export HISTSIZE=500
+export HISTFILESIZE=500
+
+# ---------------------------------------------------------------
+# aliases 
+alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -a'
+alias lal='ls -al'
+alias lnew='ls -alt | head -16'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias r='resize'
+alias h='history'
+alias c='/usr/bin/clear'
+
+alias vim='/usr/local/bin/nvim'
+alias vconf='nvim ~/.config/nvim/init.vim'
+# ---------------------------------------------------------------
+#
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
+
