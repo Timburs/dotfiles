@@ -23,6 +23,7 @@ alias c='/usr/bin/clear'
 
 alias vim='/usr/local/bin/nvim'
 alias vconf='nvim ~/.config/nvim/init.vim'
+
 # ---------------------------------------------------------------
 #
 if [ -f /etc/bash_completion ]; then

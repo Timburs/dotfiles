@@ -11,6 +11,8 @@ Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-lengthmatters'
 Plug 'matze/vim-move'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'lervag/vimtex'
+Plug 'sonph/onehalf'
 
 " TECHNICALS
 Plug 'w0rp/ale'
@@ -34,7 +36,7 @@ set laststatus=2
 set ttimeoutlen=50
 
 " Vim-Move
-let g:move_key_modifier = 'C'
+"let g:move_key_modifier = 't'
 
 " Indent Guides
 let g:indent_guides_enable_on_vim_startup = 0
