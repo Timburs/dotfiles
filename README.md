@@ -1,3 +1,4 @@
 # Tim's Dotfiles
 
-Just my bashrc and init.vim.  NVIM uses Plug as plugin manager.
+- NVIM uses Plug as plugin manager.
+- I use zshell, with oh-my-zsh as a manager.
