@@ -96,6 +96,7 @@ syntax enable
 colorscheme gruvbox
 set background=dark
 
+
 "
 "
 " End NVIM Config
