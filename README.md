@@ -1,7 +1,8 @@
 # Tim's Dotfiles
 
 I run everything on a 2016 MBP.
-Terminal : iTerm2
+
+Terminal : iTerm2.
 
 ## Shell
 - ZSH with Oh-My-Zsh as a framework.  
