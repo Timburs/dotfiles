@@ -76,5 +76,7 @@ alias oldvim='/usr/local/bin/vim'
 alias zconf='nvim ~/dotfiles/zsh/.zshrc'
 alias screenfetch='screenfetch -E'
 
+alias zucker='cd ~/Documents/Swarthmore/Fall 2018/E28'
+
 # zsh syntax highlighting
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

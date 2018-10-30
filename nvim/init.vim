@@ -8,18 +8,22 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
-Plug 'whatyouhide/vim-lengthmatters'
+" Plug 'whatyouhide/vim-lengthmatters'
 Plug 'matze/vim-move'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'lervag/vimtex'
 Plug 'sonph/onehalf'
 
 " TECHNICALS
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'kana/vim-operator-user'
 Plug 'haya14busa/vim-operator-flashy'
+
+" LaTex
+
+Plug 'lervag/vimtex'
 
 " Funsies
 Plug 'junegunn/goyo.vim'
@@ -66,6 +70,10 @@ let g:limelight_conceal_guifg = 'DarkGray'
 let g:limelight_conceal_guifg = '#777777'
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+"VimTex Configs
+let g:vimtex_compiler_progname = 'nvr'
+
 
 " GENERAL SETTINGS -----------------------------------------------------------
 
