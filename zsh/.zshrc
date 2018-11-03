@@ -38,7 +38,7 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='blue'
 POWERLEVEL9K_FOLDER_ICON=''
 POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
-POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
 POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
@@ -47,7 +47,7 @@ POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f "
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status  time)
 HIST_STAMPS="mm/dd/yyyy"
 DISABLE_UPDATE_PROMPT=true
@@ -75,8 +75,12 @@ alias vconf='nvim ~/.config/nvim/init.vim'
 alias oldvim='/usr/local/bin/vim'
 alias zconf='nvim ~/dotfiles/zsh/.zshrc'
 alias screenfetch='screenfetch -E'
+alias ls='colorls'
 
-alias zucker='cd ~/Documents/Swarthmore/Fall 2018/E28'
+alias zucker='cd ~/Documents/Swarthmore/Fall\ 2018/E28'
 
 # zsh syntax highlighting
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Tab Completion for colorls
+source $(dirname $(gem which colorls))/tab_complete.sh

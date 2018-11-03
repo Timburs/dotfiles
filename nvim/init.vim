@@ -73,6 +73,7 @@ autocmd! User GoyoLeave Limelight!
 
 "VimTex Configs
 let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_latexmk_options = '-pdf -verbose -file-line-error -synctex=1'
 
 
 " GENERAL SETTINGS -----------------------------------------------------------
@@ -98,6 +99,9 @@ filetype plugin on
 
 "Unsets 'last search pattern' by hitting return
 "nnoremap <CR> :noh<CR><CR>
+
+" Map Paste Mode to F10
+set pastetoggle=<F10>
 
 " APPEARANCE -----------------------------------------------------------------
 syntax enable

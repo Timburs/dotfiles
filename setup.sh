@@ -8,3 +8,4 @@ ln -fs ~/dotfiles/zsh/oh-my-zsh.sh ~/.oh-my-zsh/oh-my-zsh.sh
 ln -fs /usr/local/opt/chunkwm/share/chunkwm/plugins/ ~/.chunkwm_plugins
 ln -fs ~/dotfiles/.chunkwmrc ~/.chunkwmrc
 ln -fs ~/dotfiles/.skhdrc ~/.skhdrc
+ln -fs ~/dotfiles/nvim/.latexmkrc ~/.latexmkrc
