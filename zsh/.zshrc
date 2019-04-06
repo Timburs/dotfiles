@@ -7,6 +7,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/tim/.oh-my-zsh
 
+source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
+
 
 # ---- Z-SHELL THEME CONFIGS ---- #
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -77,6 +79,7 @@ alias zconf='nvim ~/dotfiles/zsh/.zshrc'
 alias screenfetch='screenfetch -E'
 alias ls='colorls'
 
+alias lila='cd ~/Documents/Swarthmore/Spring\ 2019/cs46'
 alias zucker='cd ~/Documents/Swarthmore/Fall\ 2018/E28'
 
 # zsh syntax highlighting
@@ -84,3 +87,15 @@ source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Tab Completion for colorls
 source $(dirname $(gem which colorls))/tab_complete.sh
+
+# Open VSCode
+function code {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}

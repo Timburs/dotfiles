@@ -74,6 +74,15 @@ autocmd! User GoyoLeave Limelight!
 "VimTex Configs
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_latexmk_options = '-pdf -verbose -file-line-error -synctex=1'
+let g:Tex_IgnoredWarnings = 
+    \"Underfull\n".
+    \"Overfull\n".
+    \"specifier changed to\n".
+    \"You have requested\n".
+    \"Missing number, treated as zero.\n".
+    \"There were undefined references\n"
+    \"Citation %.%# undefined"
+let g:Tex_IgnoreLevel = 2
 
 
 " GENERAL SETTINGS -----------------------------------------------------------
@@ -83,8 +92,8 @@ set relativenumber
 set number
 
 " Indent 4 spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoindent
 
@@ -105,9 +114,9 @@ set pastetoggle=<F10>
 
 " APPEARANCE -----------------------------------------------------------------
 syntax enable
+set background=light
 colorscheme gruvbox
-set background=dark
-
+let g:gruvbox_contrast_light='soft'
 
 "
 "
