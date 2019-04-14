@@ -1,9 +1,5 @@
 # Startup lines 
 
-#echo -e "\033]6;1;bg;red;brightness;38\a"
-#echo -e "\033]6;1;bg;green;brightness;49\a"
-#echo -e "\033]6;1;bg;blue;brightness;55\a"
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/tim/.oh-my-zsh
 
@@ -56,14 +52,9 @@ DISABLE_UPDATE_PROMPT=true
 
 # ---- END CONFIG ---- #
 
+# Uncomment to disable bi-weekly auto-update checks.
+DISABLE_AUTO_UPDATE="true"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
 )
@@ -99,3 +90,6 @@ function code {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+# Enable Vim keybinds in ZSH
+bindkey -v

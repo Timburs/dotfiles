@@ -114,7 +114,7 @@ set pastetoggle=<F10>
 
 " APPEARANCE -----------------------------------------------------------------
 syntax enable
-set background=light
+set background=dark
 colorscheme gruvbox
 let g:gruvbox_contrast_light='soft'
 
