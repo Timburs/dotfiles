@@ -69,6 +69,7 @@ alias oldvim='/usr/local/bin/vim'
 alias zconf='nvim ~/dotfiles/zsh/.zshrc'
 alias screenfetch='screenfetch -E'
 alias ls='colorls'
+alias top='gotop' # Requires gotop plugin
 
 alias lila='cd ~/Documents/Swarthmore/Spring\ 2019/cs46'
 alias zucker='cd ~/Documents/Swarthmore/Fall\ 2018/E28'
@@ -92,4 +93,4 @@ function code {
 }
 
 # Enable Vim keybinds in ZSH
-bindkey -v
+# bindkey -v
